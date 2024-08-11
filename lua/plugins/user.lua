@@ -35,6 +35,10 @@ return {
         "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
         "    ██   ████   ████   ██ ██      ██",
       }
+
+      opts.section.buttons.val = {
+        opts.button("<leader> P", "Projects", "Open Projects list"),
+      }
       return opts
     end,
   },

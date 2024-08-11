@@ -19,5 +19,6 @@ return {
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.project.projectmgr-nvim" },
   -- import/override with your plugins folder
 }
