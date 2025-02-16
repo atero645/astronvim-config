@@ -46,7 +46,8 @@ return {
       -- first key is the mode
       n = {
         -- second key is the lefthand side of the map
-
+        ["<C-J>"] = { ":m .+1<CR>==" },
+        ["<C-K>"] = { ":m .-2<CR>==" },
         -- navigate buffer tabs
         ["]b"] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
         ["[b"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
@@ -60,6 +61,16 @@ return {
           end,
           desc = "Close buffer from tabline",
         },
+        -- i = {
+        --
+        --   ["<C-J>"] = { "<Esc>:m .+1<CR>==gi" },
+        --   ["<C-K>"] = { "<Esc>:m .-2<CR>==gi" },
+        -- },
+        -- v = {
+        --
+        --   ["<C-J>"] = { ":m '>+1<CR>gv=gv" },
+        --   ["<C-K>"] = { ":m '<-2<CR>gv=gv" },
+        -- },
 
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus
