@@ -12,7 +12,6 @@ return {
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.sql" },
-  { import = "astrocommunity.pack.sql" },
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.xml" },
   { import = "astrocommunity.pack.yaml" },
